@@ -22,7 +22,7 @@ Function Name: camelCase (ex. findById)<br>
 
 ## Contacting Strings:
 ✗ : let fullName = firstName + " " + lastName;<br>
-✓ : let fullName = `${firstName} ${lastName}`   ||  firstName.concat(lastName);<br>
+✓ : let fullName = ``${firstName} ${lastName}``   ||  firstName.concat(lastName);<br>
 
 ## Use Arrow Function (where it's possible):
 ✓ : const multiply = (a, b) => a * b;<br>
