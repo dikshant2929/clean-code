@@ -8,74 +8,74 @@ Keep your #CleanCode while working with JavaScript. Here are some points on whic
 ✗ : ==  
 
 ## Declare Variable
-✓ : let | const
+✓ : let | const<br>
 ✗ : var
 
 ## Always use semi-colon at line end
 ✓ : (;)
 
 ## Naming Convention:
-let  : camelCase (ex. firstName)
-const : UPPER_CASE_SNAKE_CASE | camelCase (Depends on use editable or non-editable) (ex. GOOGLE_API_KEY, userInformation)
-Class Name: PascalCasing (ex. MyClass)
-Function Name: camelCase (ex. findById)
+let  : camelCase (ex. firstName)<br>
+const : UPPER_CASE_SNAKE_CASE | camelCase (Depends on use editable or non-editable) (ex. GOOGLE_API_KEY, userInformation)<br>
+Class Name: PascalCasing (ex. MyClass)<br>
+Function Name: camelCase (ex. findById)<br>
 
 ## Contacting Strings:
-✗ : let fullName = firstName + " " + lastName;
-✓ : let fullName = `${firstName} ${lastName}`   ||  firstName.concat(lastName);
+✗ : let fullName = firstName + " " + lastName;<br>
+✓ : let fullName = `${firstName} ${lastName}`   ||  firstName.concat(lastName);<br>
 
 ## Use Arrow Function (where it's possible):
-✓ : const multiply = (a, b) => a * b;
+✓ : const multiply = (a, b) => a * b;<br>
 ✗ : var multiply = funtion(a,b){ return a*b; };
 
 ## Always use curly braces around control statement:
-✓ : if(yourBooleanValue){
-		doSomething();
-	}
+✓ : if(yourBooleanValue){<br>
+		doSomething();<br>
+	}<br>
 ✗ : if(yourBooleanValue) doSomething();
 
 ## Start curly braces from same line:
-✗ : if(yourBooleanValue) 
-	{
-		doSomething();
-	}
-✓ : if(yourBooleanValue){
-		doSomething();
-	}
+✗ : if(yourBooleanValue) <br>
+	{<br>
+		doSomething();<br>
+	}<br>
+✓ : if(yourBooleanValue){<br>
+		doSomething();<br>
+	}<br>
 
 ## Use Ternary Operation where ever you can
-✓ : return isValid ? buy() : error()     ||    return (isValid ? buy : error)(); 
-✓ : if(!isValid){           //If you don't want to use ternary
-		return error();
-	}
-	return buy();
-✗ : if(isValid){
-		return buy();
-	}else{
-		return error();
-	}
+✓ : return isValid ? buy() : error()     ||    return (isValid ? buy : error)(); <br>
+✓ : if(!isValid){           //If you don't want to use ternary <br>
+		return error();<br>
+	}<br>
+	return buy();<br>
+✗ : if(isValid){<br>
+		return buy();<br>
+	}else{<br>
+		return error();<br>
+	}<br>
 
 ## Avoid unneeded ternary statements:
-✓ : const boo = a || b;
-✗ : const boo = a ? a : b;
+✓ : const boo = a || b;<br>
+✗ : const boo = a ? a : b;<br>
 
 ## Max Line length in function or in file:
-✓ : files make not more than 80 lines of code
-✓ : functions make of 15 lines of code
+✓ : files make not more than 80 lines of code<br>
+✓ : functions make of 15 lines of code<br>
 
 ## Use Default Parameters:
-✓ : const sum = (a = 0, b = 0) => a + b; 
-✗ : var sum = function(a,b){ return a + b; }
+✓ : const sum = (a = 0, b = 0) => a + b; <br>
+✗ : var sum = function(a,b){ return a + b; }<br>
 
 ## Switch Statement
-✓ : Should use break in each case
-✓ : Should use default
+✓ : Should use break in each case<br>
+✓ : Should use default<br>
 
 ## Use short hand code for Boolean
-✓ : if(isValid) {}   ||   if(!isValid) {}
-✗ : if(isValid === true) {}  ||   if(isValid === false) {}
+✓ : if(isValid) {}   ||   if(!isValid) {}<br>
+✗ : if(isValid === true) {}  ||   if(isValid === false) {}<br>
 
 ## Only use one variable per declaration
-✓ : let firstName = 'John';
-	  let lastName = 'Doe';
-✗ : let firstName = 'John', lastName = 'Doe';
+✓ : let firstName = 'John';<br>
+    let lastName = 'Doe';<br>
+✗ : let firstName = 'John', lastName = 'Doe';<br>
