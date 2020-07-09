@@ -4,7 +4,7 @@ JavaScript coding standards to keep your code clean
 Keep your #CleanCode while working with JavaScript. Here are some points on which developer should focus upon:
 
 ## For Comparison 
-✓ : ===
+✓ : === <br>
 ✗ : ==  
 
 ## Declare Variable
